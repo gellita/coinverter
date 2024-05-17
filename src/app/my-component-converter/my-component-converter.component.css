@@ -1,0 +1,34 @@
+.converter__container img{
+  width: 40px;
+
+}
+.converter__container{
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px grey;
+  width: 350px;
+  height: 200px;
+  margin: 200px auto;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.converter__container > div{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+
+}
+.converter__container > div > input{
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+}
+label{
+  font-size: 25px;
+}
