@@ -1,8 +1,8 @@
-.converter__container img{
+.container img{
   width: 40px;
 
 }
-.converter__container{
+.container{
   border-radius: 10px;
   box-shadow: 10px 5px 5px grey;
   width: 350px;
@@ -15,7 +15,7 @@
   text-align: center;
   align-items: center;
 }
-.converter__container > div{
+.container > div{
   width: 300px;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,7 @@
   padding: 10px;
 
 }
-.converter__container > div > input{
+.container > div > input{
   width: 200px;
   height: 30px;
   font-size: 20px;

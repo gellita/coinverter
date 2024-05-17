@@ -1,17 +1,17 @@
-<div class="converter__container">
-  <div class="converter__RUS_container">
+<div class="container">
+  <div class="RUS">
     <img class="icon" src="assets/icons/free-icon-russia-197408.png" alt="icon">
     <label>₽</label>
-    <input [(ngModel)]="RUSCurrency" type="number" (input)="onRUSInputChange($event)">
+    <input [(ngModel)]="RUSCurrency" type="number" (input)="onCurrencyInputChange('RUS')">
   </div>
-  <div class="converter__EUR_container">
+  <div class="EUR">
     <img class="icon" src="assets/icons/free-icon-european-union-5922032.png" alt="icon">
-    <label [(ngModel)]="EURCurrency">€</label>
-    <input [(ngModel)]="EURCurrencyRate"   type="number"  (input)="onEURInputChange($event)">
+    <label>€</label>
+    <input [(ngModel)]="EURCurrencyRate" type="number" (input)="onCurrencyInputChange('EUR')">
   </div>
-  <div class="converter__USD_container">
+  <div class="USD">
     <img class="icon" src="assets/icons/free-icon-usa-4628635.png" alt="icon">
-    <label [(ngModel)]="USDCurrency">$</label>
-    <input [(ngModel)]="USDCurrencyRate" type="number" (input)="onUSDInputChange($event)" >
+    <label>$</label>
+    <input [(ngModel)]="USDCurrencyRate" type="number" (input)="onCurrencyInputChange('USD')">
   </div>
 </div>

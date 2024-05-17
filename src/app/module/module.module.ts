@@ -12,11 +12,11 @@ import {AppComponent} from "../app.component";
     MyComponentConverterComponent
   ],
   imports: [
-    BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class ModuleModule { }
