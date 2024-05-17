@@ -11,10 +11,7 @@ export class MyComponentConverterComponent implements OnInit{
   RUSCurrency:number;
   EURCurrency = 'EUR' ;
   USDCurrency = 'USD';
-  // message: string = "";
-  // @ts-ignore
   USDCurrencyRate:number;
-  // @ts-ignore
   EURCurrencyRate: number;
 
 
@@ -23,18 +20,13 @@ export class MyComponentConverterComponent implements OnInit{
     }
 
 
-  ngOnInit() {
-    // this.onInputChange();
-  }
+  ngOnInit() {}
 
   onRUSInputChange($event: Event) {
     this.currencyService.getExchangeRates()
       .subscribe((data:CurrencyData) => {
         this.EURCurrencyRate = this.RUSCurrency / data.Valute[this.EURCurrency].Value;
         this.USDCurrencyRate = this.RUSCurrency / data.Valute[this.USDCurrency].Value;
-        // if (this.RUSCurrency == 100){
-        //   this.message = "Не имей сто рублей, а имей сто друзей"
-        // }
       });
   }
 
